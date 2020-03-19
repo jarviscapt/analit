@@ -1,0 +1,21 @@
+<div fxLayout="column" style="height: 100%;">
+
+  <mat-toolbar class="header" color="primary" fxLayoutGap="20px">
+    <div class="logo">
+      <img src="../../../assets/favicon.ico" alt="logo" class="logo__image">
+    </div>
+    <span>Аналит Фармация</span>
+  </mat-toolbar>
+  
+  <mat-drawer-container fxFlex="1 1 auto">
+    <mat-drawer mode="side" opened class="drawer">Drawer content</mat-drawer>
+    <mat-drawer-content class="drawer-content">
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+
+  <mat-toolbar class="footer" color="accent">
+    <span>Footer</span>
+  </mat-toolbar>
+
+</div>
